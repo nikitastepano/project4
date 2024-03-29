@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'TT Lakes';
+}
+
+/* Top */
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.mobile-menu {
+    width: 320px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    overflow: hidden;
+}
+
+.mobile-menu__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px 42px 24px;
+}
+
+.mobile-menu__top-left {
+    display: flex;
+    gap: 16px;
+    align-items: inherit;
+}
+
+/* Middle */
+
+.mobile-menu__middle {
+    display: flex;
+    flex-direction: column;
+    gap: 268px;
+    position: relative;
+}
+
+.mobile-menu__middle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 8px;
+    height: 32px;
+    background-color: rgb(65, 246, 215);
+    border-radius: 10px;
+}
+
+.mobile-menu__phone-message-people {
+    display: flex;
+    gap: 16px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+}
+
+.mobile-menu__mail {
+    padding-left: 24px;
+    padding-bottom: 12px;
+}
+
+.mobile-menu__phonenumber {
+    padding-left: 24px;
+    padding-bottom: 40px;
+}
+
+.mobile-menu__language {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+}
